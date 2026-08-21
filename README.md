@@ -62,12 +62,12 @@ flowchart TD
 
     Router -- "HTTP response" --> Client
 
-    style Client fill:#e8f4fd,stroke:#4a90d9,color:#1a1a1a
-    style Router fill:#fce8f3,stroke:#c9509a,color:#1a1a1a
-    style CTeam fill:#ff,stroke:#8a5fd9,color:#1a1a1a
-    style RTeam fill:#ff,stroke:#3ea36a,color:#1a1a1a
-    style RDriver fill:#ff,stroke:#3ea36a,color:#1a1a1a
-    style MTypes fill:#f5f5f5,stroke:#999,color:#1a1a1a
+    style Client fill:#DBEAFE,stroke:#3B82F6,color:#1E3A8A
+    style Router fill:#FCE7F3,stroke:#EC4899,color:#831843
+    style CTeam fill:#EDE9FE,stroke:#8B5CF6,color:#4C1D95
+    style RTeam fill:#DCFCE7,stroke:#22C55E,color:#14532D
+    style RDriver fill:#DCFCE7,stroke:#22C55E,color:#14532D
+    style MTypes fill:#F3F4F6,stroke:#6B7280,color:#1F2937
 ```
 
 **Responsabilidade de cada camada:**
