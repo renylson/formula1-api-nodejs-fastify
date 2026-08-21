@@ -1,0 +1,41 @@
+{
+  "name": "formula1-api-nodejs-fastify",
+  "version": "1.0.0",
+  "description": "A simple API for Formula 1 data built with Node.js and Fastify.",
+  "main": "server.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/src/server.js",
+      "require": "./dist/src/server.js"
+    }
+  },
+  "scripts": {
+    "dist": "tsup src",
+    "start:dev": "tsx --env-file=.env src/server.ts",
+    "start:watch": "tsx watch --env-file=.env  src/server.ts",
+    "start:dist": "npm run dist && node dist/src/index.js"
+  },
+  "keywords": [
+    "api",
+    "fastify",
+    "nodejs",
+    "typescript"
+  ],
+  "author": "Renylson Marques <renylsonm@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3"
+  },
+  "allowScripts": {
+    "esbuild@0.27.7": true,
+    "esbuild@0.28.2": true
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.3.0",
+    "fastify": "^5.12.1"
+  }
+}
